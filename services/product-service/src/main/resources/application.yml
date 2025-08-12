@@ -1,9 +1,9 @@
 spring:
   application:
-    name: user-service
+    name: product-service
 
   datasource:
-    url: jdbc:h2:mem:usersdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:productsdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driver-class-name: org.h2.Driver
     username: sa
     password:
@@ -20,7 +20,7 @@ spring:
       path: /h2-console
 
 server:
-  port: 8081
+  port: 8082
 
 # Eureka client (quando o Eureka server estiver rodando)
 eureka:
